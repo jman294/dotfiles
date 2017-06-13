@@ -1,4 +1,6 @@
 #!/bin/bash
+
+command -v rnbw >/dev/null 2>&1 || { echo >&2 "I require rnbw but its not installed. Installing."; npm i -g rnbw;}
 nvm exec 7.2 fortune | cowsay -f `find /usr/share/cowsay/cows/ -type f | shuf -n 1` | rnbw -b $(( ( RANDOM % 10 )  + 1 ))
 
 export PATH=$INSTALL_DATA_DIR/bin:$PATH
