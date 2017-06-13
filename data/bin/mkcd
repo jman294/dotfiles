@@ -1,0 +1,8 @@
+if [[ ! $_ != $0 ]]
+then
+  echo "Source this script."
+  exit 1
+fi
+dir="$1"
+mkdir ${dir};
+command cd ${dir}

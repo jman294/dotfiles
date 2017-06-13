@@ -1,0 +1,16 @@
+#!/bin/bash
+if [ -z $DOT_FILE_DIRECTORY ]; then
+  printf "Install bash first. (In the 'bash' folder)"
+fi
+
+nvm exec 7.2 fortune | cowsay -f `find /usr/share/cowsay/cows/ -type f | shuf -n 1` | rnbw -b $(( ( RANDOM % 10 )  + 1 ))
+
+export PATH=$DOT_FILE_DIRECTORY/bin:$PATH
+export VISUAL=vim
+export EDITOR=vim
+export TERM=xterm-256color
+
+alias rmcd=". rmcd"
+alias mkcd=". mkcd"
+
+. keyswitch
