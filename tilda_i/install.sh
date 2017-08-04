@@ -5,7 +5,7 @@ if [ -e ~/.vimrc ]; then
 fi
 
 # Install vim if it is not installed
-command -v vim >/dev/null 2>&1 || { echo >&2 "I require vim but its not installed. Installing."; sudo apt-get install vim;}
+command -v tilda >/dev/null 2>&1 || { echo >&2 "I require tilda but its not installed. Installing."; sudo apt-get install tilda;}
 
 mkdir -p ~/.config/tilda/
 
