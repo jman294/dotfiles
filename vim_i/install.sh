@@ -1,5 +1,4 @@
 #!/bin/bash
-echo "Vim installer data direc4tory: $INSTALL_DATA_DIR"
 if [ -e ~/.vimrc ]; then
   echo "You already have a .vimrc in ~/, renaming it to .vimrc.before\n"
   mv ~/.vimrc ~/.vimrc.before
