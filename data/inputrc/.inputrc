@@ -1,0 +1,17 @@
+$include /etc/inputrc
+"\e[A":history-search-backward
+"\e[B":history-search-forward
+set show-all-if-ambiguous on
+#set show-all-if-unmodified on
+# Color files by types
+set colored-stats On
+# Append char to indicate type
+set visible-stats On
+# Mark symlinked directories
+set mark-symlinked-directories On
+# Color the common prefix
+set colored-completion-prefix On
+# Color the common prefix in menu-complete
+set menu-complete-display-prefix On
+
+"\C-u":"\C-asudo \C-e"
