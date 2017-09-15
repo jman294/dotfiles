@@ -16,6 +16,7 @@ alias adda="git add -A"
 alias fracking="sudo"
 alias rmcd=". rmcd"
 alias mkcd=". mkcd"
+alias say="espeak"
 
 com () {
   git commit -m "$1"
