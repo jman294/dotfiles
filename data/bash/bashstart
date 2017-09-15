@@ -9,9 +9,16 @@ export EDITOR=vim
 export TERM=xterm-256color
 export PS1="\[\e[37;1m\]\$(date +"%I:%M") \$(pwd)\[\e[0m\e[34m\] 🚱\[\e[0m\] "
 
-alias please="sudo"
+# Run last command with 'sudo' prepended
+alias please="sudo \$(fc -n -l -1)"
+alias sta="git status"
+alias adda="git add -A"
 alias fracking="sudo"
 alias rmcd=". rmcd"
 alias mkcd=". mkcd"
+
+com () {
+  git commit -m "$1"
+}
 
 . keyswitch
