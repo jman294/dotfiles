@@ -21,4 +21,8 @@ com () {
   git commit -m "$1"
 }
 
+push () {
+  git push origin "$1"
+}
+
 . keyswitch
