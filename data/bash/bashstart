@@ -17,6 +17,11 @@ alias fracking="sudo"
 alias rmcd=". rmcd"
 alias mkcd=". mkcd"
 alias say="espeak"
+alias bashstart="$EDITOR $INSTALL_DATA_DIR/bash/bashstart"
+
+clone () {
+  git clone https://github.com/"$1"
+}
 
 com () {
   git commit -m "$1"
