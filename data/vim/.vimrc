@@ -12,6 +12,8 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ervandew/supertab'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'felixhummel/setcolors.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -73,3 +75,6 @@ nnoremap <leader>r :call RemSem()<CR>
 " Vim and vimrc
 nnoremap <S-t> :so ~/.vimrc<CR>:echo "Reloaded vimrc"<CR>
 nnoremap <S-e> :e ~/.vimrc<CR>:echo ""<CR>
+
+" Colorscheme
+colorscheme slate
