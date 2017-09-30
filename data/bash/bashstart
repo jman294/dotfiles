@@ -30,5 +30,3 @@ com () {
 push () {
   git push origin "$1"
 }
-
-. keyswitch
