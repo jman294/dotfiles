@@ -17,6 +17,8 @@ alias fracking="sudo"
 alias rmcd=". rmcd"
 alias mkcd=". mkcd"
 alias say="espeak"
+alias i3config="$EDITOR ~/.config/i3/config"
+alias i3blocksconfig="$EDITOR ~/.config/i3blocks/config"
 alias bashstart="$EDITOR $INSTALL_DATA_DIR/bash/bashstart"
 
 clone () {

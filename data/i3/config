@@ -169,6 +169,8 @@ bar {
 
 # Gaps
 for_window [class="^.*"] border pixel 0
+gaps inner 8
+smart_gaps on
 
 # Theme colors
 set $bg-color            #1d2021
