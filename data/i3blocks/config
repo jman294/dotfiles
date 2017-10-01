@@ -36,6 +36,6 @@ color=#fabd2f
 
 [suspend]
 full_text=<sub>z</sub>z<sup>z</sup>
-command=i3lockblur && systemctl suspend
+command=systemctl suspend
 markup=pango
 color=#83a598
