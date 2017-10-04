@@ -7,7 +7,8 @@ export PATH=$INSTALL_DATA_DIR/bin:$PATH
 export VISUAL=vim
 export EDITOR=vim
 export TERM=xterm-256color
-export PS1="\[\e[37;1m\]\$(date +"%I:%M") \$(pwd)\[\e[0m\e[34m\] λ\[\e[0m\] "
+#export PS1="\[\e[37;1m\]\$(date +"%I:%M") \$(pwd)\[\e[0m\e[34m\] λ\[\e[0m\] "
+export PS1="──── "
 
 # Run last command with 'sudo' prepended
 alias please="sudo \$(fc -n -l -1)"
@@ -20,6 +21,7 @@ alias say="espeak"
 alias i3config="$EDITOR ~/.config/i3/config"
 alias i3blocksconfig="$EDITOR ~/.config/i3blocks/config"
 alias bashstart="$EDITOR $INSTALL_DATA_DIR/bash/bashstart"
+alias neofetch="neofetch --config ~/.config/neofetch/config.conf --block_range 0 15"
 
 clone () {
   git clone https://github.com/"$1"
