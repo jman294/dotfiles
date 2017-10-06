@@ -4,7 +4,7 @@ if [ -e ~/.Xmodmap ]; then
   mv ~/.Xmodmap ~/.Xmodmap.before
 fi
 
-# Link .Xmodmap file in this directory to the home directory
+# Link .Xmodmap file
 ln -s $INSTALL_DATA_DIR/xmodmap/.Xmodmap ~/.Xmodmap
 
 if [ -e ~/.xinitrc ]; then
@@ -12,7 +12,7 @@ if [ -e ~/.xinitrc ]; then
   mv ~/.xinitrc ~/.xinitrc.before
 fi
 
-# Link .Xinitrc file in this directory to the home directory
+# Link .Xinitrc file
 ln -s $INSTALL_DATA_DIR/xmodmap/.xinitrc ~/.xinitrc
 
 xmodmap ~/.Xmodmap

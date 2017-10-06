@@ -4,5 +4,5 @@ if [ -e ~/.inputrc ]; then
   mv ~/.inputrc ~/.inputrc.before
 fi
 
-# Link .vimrc file in this directory to the home directory
+# Link .inputrc file
 ln -s $INSTALL_DATA_DIR/inputrc/.inputrc ~/.inputrc
