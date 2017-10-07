@@ -63,7 +63,6 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-exec layout tabbed
 bindsym $mod+s layout stacking
 bindsym Control+h layout tabbed
 bindsym Control+o layout toggle split
@@ -81,9 +80,10 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # workspace stuff
-assign [class="^URxvt$"] 2
-assign [class="Google-chrome"] 1
+#assign [class="^URxvt$"] 2
+#assign [class="Google-chrome"] 1
 
+exec layout tabbed
 exec --no-startup-id i3-msg 'workspace 1; exec google-chrome'
 exec --no-startup-id i3-msg 'workspace 2; exec urxvt; exec urxvt'
 
