@@ -12,8 +12,11 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ervandew/supertab'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'felixhummel/setcolors.vim'
+"Plugin 'flazz/vim-colorschemes'
+"Plugin 'felixhummel/setcolors.vim'
+"Plugin 'rust-lang/rust.vim'
+Plugin 'dart-lang/dart-vim-plugin'
+Plugin 'leafgarland/typescript-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -30,19 +33,19 @@ autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode() " Call Vim Har
 set cc=80
 set number
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2
-au BufNewFile,BufRead *.ejs set filetype=html
 
 " Remaps
 noremap <leader>` :Autoformat<CR>
+noremap <space> :tabn<CR>
+noremap <c-@> :tabp<CR>
 
 " Vim Airline
 let g:airline_theme='bubblegum'
 let g:airline_powerline_fonts = 1
-" powerline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 
 " Hide status bar
 let s:hidden_all = 1
@@ -67,7 +70,7 @@ nnoremap <S-h> :call ToggleHiddenAll()<CR>:echo ""<CR>
 
 " Remove Semicolons
 function! RemSem ()
-  %s/;//g
+  %s/;$//g
 endfunction
 
 nnoremap <leader>r :call RemSem()<CR>
@@ -76,5 +79,10 @@ nnoremap <leader>r :call RemSem()<CR>
 nnoremap <S-t> :so ~/.vimrc<CR>:echo "Reloaded vimrc"<CR>
 nnoremap <S-e> :e ~/.vimrc<CR>:echo ""<CR>
 
-" Colorscheme
-colorscheme slate
+" Macros
+let @c = 'f''r`F''r`'
+
+" File Formats
+autocmd BufNewFile,BufRead *.ts  set filetype=typescript
+autocmd BufNewFile,BufRead *.tsx setfiletype typescript
+autocmd BufNewFile,BufRead *.dart  set filetype=dart

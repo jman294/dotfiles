@@ -1,16 +1,20 @@
 !FONT
-URxvt.font: xft:Source Code Pro For Powerline:regular:pixelsize=18:antialias=true
-URxvt.boldFont: xft:Source Code Pro For Powerline:bold:pixelsize=16:antialias=true:hinting=true
-URxvt.italicFont: xft:Source Code Pro For Powerline:italic:pixelsize=16:antialias=true:hinting=true
-URxvt.boldItalicFont: xft:Source Code Pro For Powerline:bold:italic:pixelsize=16:antialias=true:hinting=true
-URxvt.letterSpacing: -10
+URxvt.font:              xft:Source Code Pro For Powerline:regular:pixelsize=19:antialias=true, xft:Dejavu Sans:regular:pixelsize=19
+URxvt.boldFont:          xft:Source Code Pro For Powerline:bold:pixelsize=16:antialias=true:hinting=true
+URxvt.italicFont:        xft:Source Code Pro For Powerline:italic:pixelsize=16:antialias=true:hinting=true
+URxvt.boldItalicFont:    xft:Source Code Pro For Powerline:bold:italic:pixelsize=16:antialias=true:hinting=true
+URxvt.letterSpacing:     -10
 
 !SCROLL
-URxvt.scrollBar: false
+URxvt.scrollBar:         false
+URxvt.saveLines:         20000
+URxvt.scrollTtyOutput:   false
+URxvt.scrollWithBuffer:  true
+URxvt.scrollTtyKeypress: true
 
 !WHO NEEDS THIS?
-URxvt.iso14755: false
-URxvt.iso14755_52: false
+URxvt.iso14755:          false
+URxvt.iso14755_52:       false
 
 !COPY PASTA
 
