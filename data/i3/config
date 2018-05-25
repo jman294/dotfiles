@@ -191,3 +191,5 @@ bindsym --release Print exec "gnome-screenshot -a"
 
 # Background
 exec feh --bg-scale ~/APLACE/art/wallpaper1.svg.png
+
+exec_always ~/Git/installer/data/bin/per-workspace-layout.pl
