@@ -17,6 +17,7 @@ Plugin 'ervandew/supertab'
 "Plugin 'rust-lang/rust.vim'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'thaerkh/vim-workspace'
 
 call vundle#end()
 filetype plugin indent on
@@ -74,6 +75,7 @@ function! RemSem ()
 endfunction
 
 nnoremap <leader>r :call RemSem()<CR>
+nnoremap <leader>s :ToggleWorkspace<CR>
 
 " Vim and vimrc
 nnoremap <S-t> :so ~/.vimrc<CR>:echo "Reloaded vimrc"<CR>
