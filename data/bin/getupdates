@@ -1,0 +1,7 @@
+#!/bin/bash
+
+list=$(apt list --upgradable)
+lines=$(echo "$list" | wc -l)
+lines=$(expr $lines - 1)
+
+echo $lines

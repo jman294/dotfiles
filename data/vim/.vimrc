@@ -12,13 +12,14 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ervandew/supertab'
-"Plugin 'flazz/vim-colorschemes'
-"Plugin 'felixhummel/setcolors.vim'
-"Plugin 'rust-lang/rust.vim'
 Plugin 'Dimercel/todo-vim'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'thaerkh/vim-workspace'
+Plugin 'dNitro/vim-pug-complete'
+Plugin 'stfl/meson.vim'
+Plugin 'digitaltoad/vim-pug'
+Plugin 'HerringtonDarkholme/yats.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -89,4 +90,8 @@ let @c = 'f''r`F''r`'
 " File Formats
 autocmd BufNewFile,BufRead *.ts  set filetype=typescript
 autocmd BufNewFile,BufRead *.tsx setfiletype typescript
- autocmd BufNewFile,BufRead *.dart  set filetype=dart
+autocmd BufNewFile,BufRead *.dart  set filetype=dart
+au BufNewFile,BufRead meson.build set filetype=meson
+au BufNewFile,BufRead meson_options.txt set filetype=meson
+
+
