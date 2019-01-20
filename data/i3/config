@@ -143,25 +143,6 @@ set_from_resource $active-text-color i3wm.color13 #FFFFFF
 set_from_resource $inactive-bg-color i3wm.color0 #000000
 set_from_resource $inactive-text-color i3wm.color0 #000000
 
-# Bar
-#bar {
-  #position top
-  #status_command i3blocks
-  #colors {
-    #background $bg-color
-    #focused_workspace $bg-color $bg-color $active-text-color
-    #inactive_workspace $bg-color $bg-color $text-color
-  #}
-#}
-# End bar
-
-# Gaps
-for_window [class="^.*"] border pixel 1
-gaps inner 8
-gaps outer 8
-smart_gaps on
-smart_borders on
-
 # Window colors
 #                       border              background         text                 indicator
 client.focused          $bg-color  $bg-color '#fb4934'          $bg-color

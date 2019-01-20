@@ -15,6 +15,7 @@ Plugin 'ervandew/supertab'
 "Plugin 'flazz/vim-colorschemes'
 "Plugin 'felixhummel/setcolors.vim'
 "Plugin 'rust-lang/rust.vim'
+Plugin 'Dimercel/todo-vim'
 Plugin 'dart-lang/dart-vim-plugin'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'thaerkh/vim-workspace'
@@ -76,6 +77,7 @@ endfunction
 
 nnoremap <leader>r :call RemSem()<CR>
 nnoremap <leader>s :ToggleWorkspace<CR>
+nnoremap <F5> :TODOToggle<CR>
 
 " Vim and vimrc
 nnoremap <S-t> :so ~/.vimrc<CR>:echo "Reloaded vimrc"<CR>
@@ -87,4 +89,4 @@ let @c = 'f''r`F''r`'
 " File Formats
 autocmd BufNewFile,BufRead *.ts  set filetype=typescript
 autocmd BufNewFile,BufRead *.tsx setfiletype typescript
-autocmd BufNewFile,BufRead *.dart  set filetype=dart
+ autocmd BufNewFile,BufRead *.dart  set filetype=dart
