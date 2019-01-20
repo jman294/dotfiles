@@ -190,7 +190,8 @@ label = %date% %time%
 
 [module/updates]
 type = custom/script
-exec = "apt list --upgradable"
+exec = "expr $(apt list --upgradable 2>&1 | wc -l) - 4"
+interval = 600
 
 [module/volume]
 type = internal/volume

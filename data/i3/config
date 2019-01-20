@@ -166,7 +166,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Sleep button
-bindsym XF86Sleep exec lockandsuspend
+bindsym XF86Sleep exec lockandsuspend &
 
 bindsym --release Print exec "gnome-screenshot -a"
 
