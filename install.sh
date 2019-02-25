@@ -53,8 +53,13 @@ export INSTALL_DATA_DIR=$DATA_DIR
 
 for dir in ./*_i/
 do
-  echo -n "Install $(echo ${dir:2} | cut -d '_' -f 1) (y/n)? "
-  read answer
+  if [ $YES = '1' ]
+  then
+    echo -n "Install $(echo ${dir:2} | cut -d '_' -f 1) (y/n)? "
+    read answer
+  else
+    answer='y'
+  fi
 
   if [ "$answer" != "${answer#[Yy]}" ] ;then
     echo -e "${BOLD_RED}Installing $(echo ${dir:2} | cut -d'_' -f 1)${NC}"
@@ -77,3 +82,5 @@ do
 done
 
 echo -e "\n################################" >> ~/.bashrc
+
+echo -e "${BOLD_RED}Done!${NC}"

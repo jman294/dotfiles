@@ -1,4 +1,4 @@
-sudo apt-get install cowsay git vim curl thunderbird fortune
+sudo apt-get install cowsay git vim curl thunderbird fortune tilda
 sudo add-apt-repository universe
 sudo add-apt-repository ppa:inkscape.dev/stable
 sudo apt-get update
