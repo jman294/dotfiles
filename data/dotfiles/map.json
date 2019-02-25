@@ -1,0 +1,17 @@
+{
+  "home": {
+    "files": [
+      "git/.gitconfig",
+      "git/.gitignore_global",
+      "vim/.vimrc",
+      "urxvt/.Xresources"
+    ]
+  },
+  ".config": {
+    "files": [
+      "polybar/config",
+      "polybar/launch.sh",
+      "tilda/config_0"
+    ]
+  }
+}
