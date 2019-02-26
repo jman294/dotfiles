@@ -94,4 +94,4 @@ autocmd BufNewFile,BufRead *.dart  set filetype=dart
 au BufNewFile,BufRead meson.build set filetype=meson
 au BufNewFile,BufRead meson_options.txt set filetype=meson
 
-
+set backupcopy=yes
