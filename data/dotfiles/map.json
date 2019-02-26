@@ -1,0 +1,21 @@
+{
+  "home": {
+    "files": [
+      "git/.gitconfig",
+      "git/.gitignore_global",
+      "vim/.vimrc",
+      "urxvt/.Xresources",
+      "xmodmap/.xinitrc",
+      "xmodmap/.Xmodmap",
+      "inputrc/.inputrc"
+    ]
+  },
+  ".config": {
+    "files": [
+      "polybar/config",
+      "polybar/launch.sh",
+      "tilda/config_0",
+      "i3/config"
+    ]
+  }
+}

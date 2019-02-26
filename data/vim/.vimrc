@@ -7,7 +7,7 @@ call vundle#begin()
 
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'wikitopian/hardmode'
+"Plugin 'wikitopian/hardmode'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
