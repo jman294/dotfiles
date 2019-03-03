@@ -1,3 +1,4 @@
 powerline-fonts_i/fonts
 data/powerline-fonts
 data/bin/kitty
+*.deb
