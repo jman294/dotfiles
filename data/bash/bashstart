@@ -39,3 +39,4 @@ push () {
 }
 
 set -o vi
+bind -m vi-insert 'Control-c: vi-movement-mode'

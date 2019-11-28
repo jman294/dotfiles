@@ -15,7 +15,8 @@
       "polybar/config",
       "polybar/launch.sh",
       "tilda/config_0",
-      "i3/config"
+      "i3/config",
+      "kitty/kitty.conf"
     ]
   }
 }

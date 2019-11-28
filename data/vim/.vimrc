@@ -31,6 +31,7 @@ let g:JavaImpDataDir = $HOME . "/vim/JavaImp"
 
 " Productivity
 autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode() " Call Vim Hardmode when Vim starts
+syntax on
 
 " Editing format
 set cc=80
@@ -82,7 +83,7 @@ nnoremap <F5> :TODOToggle<CR>
 
 " Vim and vimrc
 nnoremap <S-t> :so ~/.vimrc<CR>:echo "Reloaded vimrc"<CR>
-nnoremap <S-e> :e ~/.vimrc<CR>:echo ""<CR>
+nnoremap <S-e> :tabnew ~/.vimrc<CR>:echo ""<CR>
 
 " Macros
 let @c = 'f''r`F''r`'
@@ -91,7 +92,8 @@ let @c = 'f''r`F''r`'
 autocmd BufNewFile,BufRead *.ts  set filetype=typescript
 autocmd BufNewFile,BufRead *.tsx setfiletype typescript
 autocmd BufNewFile,BufRead *.dart  set filetype=dart
-au BufNewFile,BufRead meson.build set filetype=meson
-au BufNewFile,BufRead meson_options.txt set filetype=meson
+autocmd BufNewFile,BufRead *.svelte  set filetype=html
+autocmd BufNewFile,BufRead meson.build set filetype=meson
+autocmd BufNewFile,BufRead meson_options.txt set filetype=meson
 
 set backupcopy=yes
