@@ -25,9 +25,11 @@ let g:ale_fixers = {
 \   'javascript': ['prettier'],
 \   'css': ['prettier'],
 \}
+" In ~/.vim/vimrc, or somewhere similar.
+let g:ale_linter_aliases = {'jsx': ['css', 'javascript']}
+let g:ale_linters = {'jsx': ['stylelint', 'eslint']}
 let g:ale_fix_on_save = 1
 
-" Java
 let g:JavaImpPaths = "/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar"
 let g:JavaImpDataDir = $HOME . "/vim/JavaImp"
 
@@ -40,6 +42,7 @@ set tabstop=2 softtabstop=0 expandtab shiftwidth=2
 noremap <leader>` :Autoformat<CR>
 noremap <space> :tabn<CR>
 noremap <c-@> :tabp<CR>
+nmap <S-Enter> O<Esc>
 
 " Vim Airline
 let g:airline_theme='bubblegum'
@@ -59,3 +62,7 @@ autocmd BufNewFile,BufRead *.tsx setfiletype typescript
 autocmd BufNewFile,BufRead *.dart  set filetype=dart
 autocmd BufNewFile,BufRead meson.build set filetype=meson
 autocmd BufNewFile,BufRead meson_options.txt set filetype=meson
+augroup FiletypeGroup
+    autocmd!
+    au BufNewFile,BufRead *.jsx set filetype=javascript.jsx
+augroup END
