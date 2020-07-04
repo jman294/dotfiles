@@ -96,4 +96,4 @@ autocmd BufNewFile,BufRead *.svelte  set filetype=html
 autocmd BufNewFile,BufRead meson.build set filetype=meson
 autocmd BufNewFile,BufRead meson_options.txt set filetype=meson
 
-set backupcopy=yes
+set backupcopy=no
